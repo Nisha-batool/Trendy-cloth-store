@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <meta name="description" content="Discover fresh fits, everyday essentials, and statement pieces at Trendy Clothes." />
+    <title>Trendy Clothes | New Season Styles</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="index.html">
+          <div class="logo">
+            <h1>Trendy</h1>
+            <ion-icon name="shirt-outline"></ion-icon>
+          </div>
+        </a>
+
+        <div class="list-navbar">
+          <button class="btn-open">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="navbar-div"></div>
+        <nav class="navbar">
+          <button class="btn-close">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <a href="index.html">
+            <div class="logo">
+              <h1>Trendy</h1>
+              <ion-icon name="shirt-outline"></ion-icon>
+            </div>
+          </a>
+
+          <ul class="navbar-list">
+            <li><a href="#article" class="activeBtn">Home</a></li>
+            <li><a href="#featured-clothes">Shop</a></li>
+            <li><a href="#section-discount">Sale</a></li>
+            <li><a href="#section-one">New arrivals</a></li>
+            <li><a href="#customer">Reviews</a></li>
+          </ul>
+
+          <div class="icons">
+            <div class="icons-navbar">
+              <div class="search">
+                <button class="icon-search">
+                  <ion-icon name="search-outline"></ion-icon>
+                </button>
+              </div>
+
+              <div class="mode">
+                <button class="icon-btn">
+                  <ion-icon name="sunny-outline"></ion-icon>
+                </button>
+              </div>
+
+              <div class="out-div">
+                <button class="icon-out">
+                  <ion-icon name="log-out-outline"></ion-icon>
+                </button>
+              </div>
+
+              <div class="love-div">
+                <a href="./loved-product.html">
+                  <button class="icon-love">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <div class="live"></div>
+                  </button>
+                </a>
+              </div>
+
+              <div class="cart-div">
+                <a href="./shopping-cart.html">
+                  <button class="icon-cart">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </button>
+                </a>
+                <div class="counter">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="account">
+              <ion-icon name="person-outline"></ion-icon>
+              <h3></h3>
+            </div>
+          </div>
+
+          <div class="person">
+            <a href="signIn.html" class="signIn">
+              <button class="icon-person">
+                <ion-icon name="person-outline"></ion-icon>
+                <p>Sign In</p>
+              </button>
+            </a>
+
+            <a href="signUp.html" class="signUp">
+              <button class="icon-person">
+                <ion-icon name="person-outline"></ion-icon>
+                <p>Sign Up</p>
+              </button>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-one">
+      <div class="search-div">
+        <div class="container">
+          <button class="btn-close">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="input">
+            <input type="search" placeholder="What are you looking for ?" />
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <article id="article">
+      <div class="section-one">
+        <div class="section-title">
+          <h1>Fresh fits for your everyday</h1>
+          <p>
+            Meet your new-season favourites: easy layers, standout essentials,
+            and feel-good styles made to go wherever you do.
+          </p>
+
+          <button onclick="document.querySelector('#featured-clothes').scrollIntoView({behavior:'smooth'})">Shop the collection</button>
+        </div>
+
+        <div class="home-images">
+          <div class="home-swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="home-article swiper-slide">
+                <img
+                  src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85"
+                  alt="Model wearing a modern streetwear outfit"
+                  class="home-img"
+                />
+              </article>
+
+              <article class="home-article swiper-slide">
+                <img
+                  src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85"
+                  alt="Contemporary fashion look"
+                  class="home-img"
+                />
+              </article>
+
+              <article class="home-article swiper-slide">
+                <img
+                  src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85"
+                  alt="Friends exploring a clothing collection"
+                  class="home-img"
+                />
+              </article>
+
+              <article class="home-article swiper-slide">
+                <img
+                  src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85"
+                  alt="Street style outfit from the new collection"
+                  class="home-img"
+                />
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <main id="featured-clothes">
+      <div class="head-cloth">
+        <h1>Shop bestsellers</h1>
+      </div>
+      <ul class="featured-clothes-list"></ul>
+    </main>
+
+    <section id="section-discount">
+      <div class="discount-image">
+        <figure>
+          <img class="img-one" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85" alt="Model in a seasonal outfit" />
+          <img class="img-two" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85" alt="New-season fashion look" />
+        </figure>
+      </div>
+
+      <div class="discount-title">
+        <h3>Up to 50% off selected styles</h3>
+        <p>
+          Your favourite fits, now at feel-good prices. Find your next everyday
+          essential before it is gone.
+        </p>
+        <button>Shop Now</button>
+      </div>
+    </section>
+
+    <section id="section-one">
+      <div class="head-cloth">
+        <h1>Just dropped</h1>
+      </div>
+      <ul class="clothes-list"></ul>
+      <ul class="clothes-list-two"></ul>
+    </section>
+
+    <article id="subscribe">
+      <div class="subscribe-title">
+        <h1>
+          Subscribe To Receive <br />
+          The Latest Updates
+        </h1>
+      </div>
+      <div class="subscribe-input">
+        <input type="email" placeholder="Enter email" />
+        <button>Subscribe</button>
+      </div>
+    </article>
+
+    <article id="customer">
+      <div class="customer-title">
+        <h1>Customer Opinions</h1>
+      </div>
+      <ul class="customer-description-list"></ul>
+    </article>
+
+    <ul class="message"></ul>
+
+    <div class="button-top">
+      <button class="btn">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </button>
+    </div>
+
+    <main id="show-product">
+      <div class="show-product">
+        <ul class="show-product-list"></ul>
+      </div>
+      <div class="div"></div>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-title">
+          <h1>Trendy Clothes</h1>
+          <p>
+            Good clothes, great fits. <br />
+            Find your new everyday <br />
+            favourites here.
+          </p>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <h3>About</h3>
+            <span>Awards</span>
+            <span>FAQs</span>
+            <span>Privacy policy</span>
+            <span>Terms of services</span>
+          </li>
+          <li>
+            <h3>Company</h3>
+            <span>Blogs</span>
+            <span>Community</span>
+            <span>Our team</span>
+            <span>Help center</span>
+          </li>
+          <li>
+            <h3>Contact</h3>
+            <span
+              >Av. Hacienda <br />
+              Lima 4321, Perú
+            </span>
+            <span
+              >hello@trendyclothes.com <br />
+              +1 (800) 555-0142</span
+            >
+          </li>
+          <li>
+            <h3>Social</h3>
+            <div class="icons">
+              <ion-icon name="logo-facecloth"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&#169; All Rights Reserved By Bedimcode</p>
+      </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="./js/sectionOneImg.js"></script>
+    <script type="module" src="dist/index-websie.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
